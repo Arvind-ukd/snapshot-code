@@ -1,3 +1,5 @@
+provider "azuread" {
+}
 resource "azurerm_role_definition" "example" {
   name        = "ARO-Costco-custom-snapshot-role"
   scope       = data.azurerm_subscription.primary.id
